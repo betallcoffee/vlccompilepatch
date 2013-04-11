@@ -1,0 +1,32 @@
+diff --git a/extras/package/ios/build.sh b/extras/package/ios/build.sh
+index 0252bac..ca78d71 100755
+--- a/extras/package/ios/build.sh
++++ b/extras/package/ios/build.sh
+@@ -213,6 +213,9 @@ fi
+     --disable-orc \
+     --disable-schroedinger \
+     --disable-libmpeg2 \
++    --enable-faad2 \
++    --enable-ffmpeg \
++    --enable-mad \
+     --disable-chromaprint \
+     --disable-mad \
+     --disable-taglib > ${out}
+@@ -275,7 +278,7 @@ ${VLCROOT}/configure \
+     --enable-mkv \
+     --enable-opus \
+     --disable-sout \
+-    --disable-faad \
++    --enable-faad \
+     --disable-lua \
+     --disable-a52 \
+     --disable-fribidi \
+@@ -310,6 +313,8 @@ ${VLCROOT}/configure \
+     --disable-fluidsynth \
+     --disable-jack \
+     --disable-pulse \
++    --disable-sout \
++    --disable-lua \
+     --disable-mtp \
+     --enable-ogg \
+     --enable-speex \

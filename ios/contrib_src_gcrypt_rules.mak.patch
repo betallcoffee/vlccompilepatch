@@ -1,0 +1,13 @@
+diff --git a/contrib/src/gcrypt/rules.mak b/contrib/src/gcrypt/rules.mak
+index 9a52533..468878f 100644
+--- a/contrib/src/gcrypt/rules.mak
++++ b/contrib/src/gcrypt/rules.mak
+@@ -1,6 +1,7 @@
+ # GCRYPT
+ GCRYPT_VERSION := 1.5.1
+-GCRYPT_URL := ftp://ftp.gnupg.org/gcrypt/libgcrypt/libgcrypt-$(GCRYPT_VERSION).tar.bz2
++#GCRYPT_URL := ftp://ftp.gnupg.org/gcrypt/libgcrypt/libgcrypt-$(GCRYPT_VERSION).tar.bz2
++GCRYPT_URL := http://www.ring.gr.jp/pub/net/gnupg/libgcrypt/libgcrypt-$(GCRYPT_VERSION).tar.bz2
+ 
+ PKGS += gcrypt
+ 

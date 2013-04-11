@@ -1,0 +1,13 @@
+diff --git a/contrib/src/gpg-error/rules.mak b/contrib/src/gpg-error/rules.mak
+index 912de40..a92cf57 100644
+--- a/contrib/src/gpg-error/rules.mak
++++ b/contrib/src/gpg-error/rules.mak
+@@ -1,6 +1,7 @@
+ # GPGERROR
+ GPGERROR_VERSION := 1.11
+-GPGERROR_URL := ftp://ftp.gnupg.org/gcrypt/libgpg-error/libgpg-error-$(GPGERROR_VERSION).tar.bz2
++#GPGERROR_URL := ftp://ftp.gnupg.org/gcrypt/libgpg-error/libgpg-error-$(GPGERROR_VERSION).tar.bz2
++GPGERROR_URL := http://www.ring.gr.jp/pub/net/gnupg/libgpg-error/libgpg-error-$(GPGERROR_VERSION).tar.bz2
+ 
+ $(TARBALLS)/libgpg-error-$(GPGERROR_VERSION).tar.bz2:
+ 	$(call download,$(GPGERROR_URL))
